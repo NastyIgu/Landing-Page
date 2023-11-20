@@ -1,0 +1,147 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    
+}
+.body-wrapper{
+    z-index: 1;
+    background: linear-gradient(-46deg, #BDC5F4, #FCA586, #BDC5F4, #BDC5F4 );
+    background-size: 400% 400%;
+    width: 100%;
+    height: 100%;
+    animation: animate 10s ease infinite;
+}
+
+/* Css Variables */
+:root{
+    --mainColor: #BCC5F5;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #230B58;
+    --textColor: #eee;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h3 {
+  
+    margin-left: 70px;
+    color: #230B58;
+
+  }
+.header ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.header ul li {
+    display: inline-block;
+    padding: 10px 15px;
+}
+.header ul li a{
+    text-decoration: none;
+    color: #230B58;
+    font-size: 17px;
+    padding: 5px 5px;
+}
+
+.header ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #230B58;
+    margin: auto;
+    display: block;
+}
+
+.header ul li a:hover::after {
+    width: 100%;
+    transition: width 0.1s linear;
+}
+.header h3 {
+    padding: 10px 20px;
+}
+
+
+/* styles */
+
+img {
+    height: 638px;
+}
+.num-bers p{
+    font-size: x-small;
+    font-weight: 500;
+    margin-bottom: 45px;
+    
+}
+.opa{
+    opacity: 0.6;
+}
+.move{
+    height: 510px;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.plain-col1{
+    border: 1px solid #332385;
+    border-radius: 0.5rem;
+    color: #4B41B7;
+}
+.plain-col2{
+    background: #4B41B7 ;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+
+.hovs1:hover {
+    border-color: #9F5C4B;
+}
+.hovs2:hover {
+    background-image: -webkit-linear-gradient(bottom, #9F5C4B, #4B41B7);
+
+}
+
+.card{
+    background-image: url(/src/assets/card-img.jpeg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 5rem;
+    width: 90%;
+    margin-left: 4.3rem;
+    border-radius: 12px;
+    margin-top: 4rem;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.05);
+  }
+
+.card-details{
+   text-align: center;
+   padding: 1.5rem;
+   font-size: 38px;
+
+}
